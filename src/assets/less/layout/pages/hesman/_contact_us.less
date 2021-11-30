@@ -1,0 +1,40 @@
+.contact-us {
+  background-color: #F6F8FA;
+  margin-top: -5%;
+  .v-main__wrap {
+    background: url("/assets/images/contact-us-background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    section {
+      .row {
+        .col-12 {
+          .text--primary {
+            color: #1C76CE !important;
+          }
+          .list {
+            position: relative;
+            &::before {
+              content: url("/assets/icons/list-icon.svg");
+              position: absolute;
+              left: 0;
+            }
+          }
+          .v-card {
+            border-radius: 10px;
+            background-color: #F6F8FA;
+            background: url("/assets/images/contact-us-image.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-blend-mode: multiply;
+            @media screen and (max-width: 1440px) {
+              height: 375px !important;
+            }
+            @media screen and (max-width: 1366px) {
+              height: 350px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

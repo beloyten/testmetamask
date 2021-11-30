@@ -1,0 +1,216 @@
+.width(@n, @i:1) when (@i =< @n) {
+  .w-@{i} {
+    width: @i * 1%;
+    float: left;
+  }
+  .width(@n, (@i + 1));
+}
+.width(100) !important;
+@font-face {
+  font-family: 'Quicksand-Regular';
+  src: url(/assets/css/fonts/Quicksand-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Quicksand Bold';
+  src: url(/assets/css/fonts/Quicksand-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Quicksand Medium';
+  src: url(/assets/css/fonts/Quicksand-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Quicksand Light';
+  src: url(/assets/css/fonts/Quicksand-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Lato Regular';
+  src: url(/assets/css/fonts/Lato-Regular.ttf) format("truetype");
+}
+:root {
+  --font_bold: 'Quicksand Bold', IBMPlexSans, Arial, PingFangSC-Regular, "Microsoft YaHei", sans-serif;
+  --font_regular: 'Quicksand-Regular', IBMPlexSans, Arial, PingFangSC-Regular, "Microsoft YaHei", sans-serif;
+  --color_gray: #999999;
+  --header_bg: #304964;
+  --header_size: 12px;
+  --header_color: #ffffff;
+  --header_box_shadown: none;
+  --link_hover: #ef6026;
+  --menu_hamburger_color: #5f7195;
+  --menu_hamburger_color_hover: #357ce1;
+  --hightlight-color: var(--menu_hamburger_color_hover);
+  --link_active: var(--primary_color);
+
+//color
+  --primary_color: #3c77d0;
+  --section-box-shadown: none;
+
+  --footer_bg: #081D34;
+  --footer_color: #ffffff;
+  --footer_link_color: rgba(134, 158, 201, .8);
+  --footer_box_shadown: none;
+
+
+  --body_background: #f6f8f8;
+  --body_color: #888888;
+  --body_font: 'Quicksand-Regular', sans-serif;
+  --body_font_bold: 'Quicksand Bold', sans-serif;
+  --body_font_medium: 'Quicksand Medium', sans-serif;
+  --body_font_light: 'Quicksand', sans-serif;
+  --body_size: 16px;
+
+  --white_color: #ffffff;
+  --black_color: #000000;
+  --box_bg: #ffffff;
+  --box_title_color: #263241;
+
+  --warning_color: #f55858;
+
+  --wallet_notice_bg: #fdf9f2;
+  --wallet_notice_border: #f3d9a9;
+  --wallet_notice_color: #1c242c;
+  --wallet_notice_icon: #faad14;
+  --wallet_submenu_hover_color: #f8f9fb;
+
+  --label_color: #9aa5b5;
+  --label_table_color: #9194a4;
+  --disabled_bg: #dcdee2;
+  --label_color_paler: #232a4a;
+  --border_form_footer: #eaedf0;
+
+  --input_form_border_color: #dfe2e7;
+  --input_form_error_color: #fa5252;
+  --input_search_color: #7f8fa4;
+  --input_border_color: #d1d3df;
+  --input_bg_onlyread: #f9f7fd;
+
+  --table_border_color: #f4f4f6;
+  --clipboard_bg: #f2f3f8;
+  --clipboard_color: #589065;
+  --btn_background: #7a98f7;
+  --menu_child_hover: #f9f9f9;
+  --menu_child_color: #607588;
+  --page_404_color: var(--menu_child_hover);
+
+  --li_form_color: #f8f9fa;
+  --point_form_bg: #fffae6;
+  --point_form_color: #cc7c09;
+  --copyright_border_color: #212840;
+  --arrow_down_color: #869ec9;
+  --arrow_down_color_hover: var(--white_color);
+  --divider_header: #263e53;
+
+  --exchange_color: #a5bdea;
+  --exchange_bg: #292f42;
+  --exchange-header-color: #2e3753;
+  --exchange-header-bg: #17294e;
+  --rate_color_up: #12b886;
+  --rate_bg_up: rgba(16,255,204,.1);
+  --rate_color_down: #fa5252;
+  --rate_bg_down: rgba(236, 10, 10, 0.1);
+  --exchange_border_color: #292f42;
+  --exchange_col_background: #162442;
+  --exchange_header_color: #ffffff;
+  --exchange_price_color: #7085ac;
+  --exchange_right_bg: var(--exchange_bg);
+  --exchange-left-border-color: rgba(46,55,83,.4);
+
+  --markets_color: #9ca9b5;
+  --markets_color-lable: #a5bdea;
+  --markets_bg: #1a243b;
+  --market-header-bg: #1e2943;
+  --markets_star_color: #d3dfe6;
+  --markets_price_color: #2dab20;
+  --markets_tabs_color: #ffffff;
+  --market_row_hover_bg: rgba(46, 55, 83, 0.2);
+  --market-left_nav_color: #ffffff;
+  --market_header_nav_active: var(--exchange-header-color);
+  --market-header-color: #2e3753;
+
+  --pagination-color: #515a6e;
+  --pagination-color-border: #dcdee2;
+
+  &.html-light-version {
+    --header_bg: #ffffff;
+    --header_color: #363636;
+    --header_box_shadown: 0 1px 5px 0 rgba(68,68,68,0.05);
+    --link_hover: #ef6026;
+
+    --section-box-shadown: 0 -1px 10px 0 rgba(68,68,68,0.1);
+
+    --footer_bg: #ffffff;
+    --footer_color: #363636;
+    --footer_link_color: #363636;
+    --footer_box_shadown: 0 -1px 10px 0 rgba(68,68,68,0.05);
+
+    --body_background: #f4f8f8;
+    --input_bg_onlyread: #76839a;
+
+    --menu_child_hover: #f4f6f6;
+    --page_404_color: var(--header_color);
+
+    --arrow_down_color: var(--header_color);
+    --arrow_down_color_hover: var(--header_color);
+    --divider_header: #dcdee2;
+
+    --exchange_color: #7f8fa4;
+    --exchange_bg: #f4f6f6;
+    --exchange-header-color: #dcdee2;
+    --exchange-header-bg: #f4f5f7;
+    --exchange_border_color: #dfe2e7;
+    --exchange_col_background: #ffffff;
+    --exchange_header_color: #2e3753;
+    --exchange_right_bg: #f8f8f9;
+    --exchange-left-border-color: rgba(248,249,250,.4);
+
+    --markets_color: #363636;
+    --markets_color-lable: #363636;
+    --markets_bg: #ffffff;
+    --market-header-bg: #f2f6fa;
+    --markets_tabs_color: var(--markets_color);
+    --market_row_hover_bg: rgba(46, 55, 83, 0.05);
+    --market-left_nav_color: #596a7a;
+    --market_header_nav_active: #ffffff;
+    --market-header-color: #f6f9f9;
+
+    #header .header-right .menu-list li.menu-item-login {
+      background-color: rgba(46, 55, 83, 0.05);
+    }
+
+    .section-inner .mod {
+      -webkit-box-shadow: var(--section-box-shadown);
+      -moz-box-shadow: var(--section-box-shadown);
+      box-shadow: var(--section-box-shadown);
+    }
+
+    .invite {
+      .section-container {
+        > *:not(.banner) {
+          -webkit-box-shadow: var(--section-box-shadown);
+          -moz-box-shadow: var(--section-box-shadown);
+          box-shadow: var(--section-box-shadown);
+        }
+      }
+    }
+
+    .preloader {
+      .preloader-inner {
+        background-image: url(/assets/images/preloader-light.gif);
+      }
+    }
+
+    ::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
+      width: 4px;
+      height: 4px;
+    }
+
+    ::-webkit-scrollbar {
+      background-color: red;
+    }
+    ::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      background-color: #8994a3;
+    }
+  }
+}

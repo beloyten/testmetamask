@@ -1,0 +1,69 @@
+.panel-item {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  label {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .mb-0 {
+    margin-bottom: 0;
+  }
+  .mb-5 {
+    margin-bottom: 10px;
+  }
+  input[type=text], textarea {
+    width: 100%;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    border: 1px solid var(--input_form_border_color);
+  }
+  textarea {
+    border: 1px solid var(--fee_panel_border);
+    min-height: 80px;
+  }
+
+  em {
+    color: var(--color_gray);
+  }
+
+  .tc-button {
+    line-height: 40px;
+    width: 200px;
+    max-width: 100%;
+    font-size: 14px;
+    margin-top: 0;
+    text-transform: uppercase;
+    color: var(--white_color) !important;
+  }
+}
+.panel-checkbox-item {
+  width: 33.333333%;
+  display: inline-block;
+  float: left;
+  position: relative;
+
+  label {
+    display: inline;
+    margin-left: 20px;
+  }
+  input[type=checkbox] {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .panel-checkbox-item {
+    width: 100%;
+    margin-bottom: 5px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

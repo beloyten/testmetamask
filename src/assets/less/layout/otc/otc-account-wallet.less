@@ -1,0 +1,167 @@
+.account-wallet {
+  padding-left: 0;
+  padding-right: 0;
+  .body-title {
+    padding-left: calc(2.71vw);
+  }
+  .body-detail {
+    margin-top: calc(4.56vh);
+    .account {
+      .row {
+        height: calc(9.5vh);
+        display: flex;
+        align-items: center;
+        background-color: #F8F9F9;
+        padding-left: calc(2.74vw);
+        padding-right: calc(2.71vw);
+        .coin {
+          img {
+            width: calc(2.58vw);
+            margin-right: calc(1.43vw);
+          }
+          span {
+            font-family: 'Quicksand Medium', sans-serif;
+            font-size: 20px;
+            line-height: 25px;
+          }
+        }
+        .btn-small {
+          width: calc(8.2vw);
+          height: calc(3.9vh);
+          border-radius: 10px;
+          display: flex;
+          color: white;
+          align-items: center;
+          justify-content: center;
+          font-family: 'Quicksand Medium', sans-serif;
+          font-size: 10px;
+          line-height: 14px;
+          letter-spacing: 0;
+          margin: 0;
+          margin-left: calc(14.5vw);
+        }
+        .otc-account, .frozen {
+          p {
+            font-family: 'Quicksand Medium', sans-serif;
+            font-size: 14px;
+            line-height: 15px;
+          }
+          span {
+            font-family: 'Quicksand-Regular', sans-serif;
+            font-size: 14px;
+            line-height: 15px;
+          }
+        }
+        .otc-account {
+          margin-left: calc(17.77vw);
+        }
+        .frozen {
+          margin-left: calc(4.98vw);
+        }
+      }
+    }
+    .detail-transaction {
+      margin-top: calc(5.34vh);
+      background-color: #FFFFFF;
+      .table {
+        .table-title {
+          width: 100%;
+          text-align: center;
+          font-family: 'Quicksand Medium', sans-serif;
+          font-size: 15px;
+          line-height: 19px;
+          text-transform: uppercase;
+        }
+        table {
+          margin-top: calc(3.5vh);
+          width: 100%;
+          font-family: 'Quicksand-Regular', sans-serif;
+          font-size: 14px;
+          line-height: 15px;
+          color: #122641;
+          tr {
+            width: 100%;
+            height: calc(7.55vh);
+            td:first-child, th:first-child {
+              padding-left: calc(2.74vw);
+            }
+          }
+          thead {
+            tr {
+              background-color: #F8F9F9;
+            }
+          }
+          tbody {
+            height: calc(33.5vh);
+            tr:nth-child(2n) {
+              background-color: #F8F9F9;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.account-wallet-page {
+  .v-main__wrap {
+    .v-card {
+      .row {
+        &.btc-row {
+          background-color: #F8F9F9;
+          .col-12 {
+            &:first-child, &:last-child {
+              display: flex;
+              align-items: center;
+            }
+            &:last-child {
+              justify-content: flex-end;
+              button {
+                border-radius: 10px;
+              }
+            }
+            .btc {
+              font-size: 20px;
+            }
+            p {
+              font-weight: bold;
+              font-size: 14px;
+            }
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+        .col-12 {
+          .v-data-table {
+            .v-data-table__wrapper {
+              table {
+                thead {
+                  tr {
+                    th {
+                      font-size: 14px;
+                      height: 60px;
+                      background-color: #F8F9F9;
+                      border-bottom: none;
+                    }
+                  }
+                }
+                tbody {
+                  tr {
+                    td {
+                      border-bottom: none;
+                    }
+                    &:nth-child(2n) {
+                      td {
+                        background-color: #F8F9F9;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

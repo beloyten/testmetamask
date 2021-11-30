@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90.314" height="79.377" viewBox="0 0 90.314 79.377">
+  <g id="diamond_1_" data-name="diamond (1)" transform="translate(0 -31)">
+    <path id="Path_13080" data-name="Path 13080" d="M126.282,31l-1.7,10.483-14.179,13.33L98.5,41.583l.159-10.266A2.013,2.013,0,0,1,99.823,31Z" transform="translate(-81.125)" fill="#ecf2ff"/>
+    <path id="Path_13081" data-name="Path 13081" d="M283.623,31.318l-.5,11.589L271.875,54.813l-13.23-11.907L256,31h26.459A2.013,2.013,0,0,1,283.623,31.318Z" transform="translate(-210.843)" fill="#d9e5ff"/>
+    <path id="Path_13082" data-name="Path 13082" d="M197.751,54.813l-15.875,5.292L166,54.813,181.875,31Z" transform="translate(-136.719)" fill="#d9e5ff"/>
+    <path id="Path_13083" data-name="Path 13083" d="M271.875,54.813,256,31V60.105Z" transform="translate(-210.843)" fill="#bfd6ff"/>
+    <path id="Path_13084" data-name="Path 13084" d="M197.751,166l-1.512,23.813-14.364,31.751-14.364-31.751L166,166Z" transform="translate(-136.719 -111.187)" fill="#ecf2ff"/>
+    <path id="Path_13085" data-name="Path 13085" d="M256,221.564l14.364-31.752L271.875,166H256Z" transform="translate(-210.843 -111.187)" fill="#d9e5ff"/>
+    <g id="Diamond_12_" transform="translate(61.032 31.318)">
+      <g id="Group_2477" data-name="Group 2477">
+        <path id="Path_13086" data-name="Path 13086" d="M375.281,56.3l-14.729,5.292L346,56.3l11.748-23.5a2.155,2.155,0,0,1,.953.741c5.768,7.673,10.284,13.494,16.052,21.167A2.382,2.382,0,0,1,375.281,56.3Z" transform="translate(-346 -32.8)" fill="#bfd6ff"/>
+      </g>
+    </g>
+    <path id="Path_13087" data-name="Path 13087" d="M29.281,56.3,14.729,61.587,0,56.3a2.382,2.382,0,0,1,.529-1.588C6.3,47.035,10.813,41.214,16.581,33.541a2.154,2.154,0,0,1,.953-.741Z" transform="translate(0 -1.482)" fill="#d9e5ff"/>
+    <path id="Path_13088" data-name="Path 13088" d="M301.157,166a2.6,2.6,0,0,1-.582,1.64C285.281,186.8,273.41,201.4,258.064,220.559A2.542,2.542,0,0,1,256,221.564L271.875,166Z" transform="translate(-210.843 -111.187)" fill="#b3c5ff"/>
+    <path id="Path_13089" data-name="Path 13089" d="M45.157,221.564a2.542,2.542,0,0,1-2.064-1.005C27.747,201.4,15.875,186.8.582,167.64A2.6,2.6,0,0,1,0,166H29.281Z" transform="translate(0 -111.187)" fill="#bfd6ff"/>
+  </g>
+</svg>

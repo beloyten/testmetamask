@@ -1,0 +1,124 @@
+.wrap-modal-container {
+  width             : 500px;
+  max-width         : 100%;
+  background        : var(--white_color);
+  margin            : 10vh auto 0;
+  -webkit-box-shadow: 0 1px 1px rgba(8, 31, 64, 0.25);
+  box-shadow        : 0 1px 1px rgba(8, 31, 64, 0.25);
+
+  .modal-inner {
+    padding    : 40px 60px 40px;
+    text-align : center;
+    line-height: 1.4em;
+    font-size  : 16px;
+    color      : var(--label_color);
+  }
+
+  .swal2-icon {
+    display: flex;
+  }
+
+  .swal2-success-circular-line-left {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .swal2-success-fix {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .swal2-success-circular-line-right {
+    background-color: rgb(255, 255, 255);
+  }
+
+}
+.popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  &.full-width {
+    max-width: auto;
+    width: 100%;
+    box-shadow: none;
+  }
+  &.small {
+    max-width: 400px;
+  }
+  .el-dialog {
+    width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    margin: 0 !important;
+  }
+  .el-dialog__header {
+    padding-top: 25px;
+  }
+  .el-dialog__header, .el-dialog__body {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .modal-title {
+    margin-bottom: 20px;
+    h4 {
+      font-weight: 700;
+      color: black;
+    }
+
+    .sub-title {
+      margin-top: 10px;
+      font-size: 14px;
+      color: var(--body_color);
+    }
+  }
+  .modal-field {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  textarea {
+    height: 80px;
+    width: 100%;
+    border: 1px solid #e6ecf2;
+  }
+
+  label {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+
+    span, a {
+      float: right;
+    }
+
+    &.security-item {
+      a {
+        float: left;
+      }
+    }
+  }
+
+  input[type=text], input[type=number], input[type=password] {
+    width: 100%;
+    padding: 5px 35px 5px 12px;
+    border-radius: 2px;
+    border: 1px solid var(--input_form_border_color);
+    font-size: 14px;
+  }
+  .country-container {
+    .country-show {
+      .icon {
+        right: 0;
+        top: 0;
+        width: 36px;
+        height: 36px;
+        line-height: 38px;
+        i {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,235 @@
+.red-color {
+  color: red;
+}
+.otc-orders {
+  .otc-trade-menu li {
+    font-size: 14px;
+    letter-spacing: 1px;
+
+    img {
+      width: 15px;
+      margin-right: 10px;
+    }
+  }
+  .otc-list-orders {
+    padding-left: 0;
+    padding-right: 0;
+
+    dd {
+      > * {
+        font-size: 13px;
+      }
+    }
+  }
+}
+.item-type {
+  .otc-btn {
+    min-width: 110px;
+  }
+}
+.item-status {
+  img {
+    width: 16px;
+    line-height: 30px;
+  }
+}
+.item-volume {
+  span {
+    display: block;
+    line-height: 24px;
+  }
+  .fee {
+    line-height: 14px;
+    font-size: 11px;
+    font-style: italic;
+  }
+}
+.item-counterparty {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.mobile-label {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .mobile-label {
+    display: block;
+    float: left;
+    padding-right: 20px;
+    width: 180px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 0;
+    color: var(--otc_title_color);
+    font-weight: 400;
+
+    + span {
+      margin-left: 180px;
+      display: block;
+    }
+  }
+  .item-price {
+    .mobile-label {
+      font-family: var(--otc_font_family);
+    }
+  }
+  .otc-list-orders {
+    dl {
+      &:first-child {
+        display: none;
+      }
+    }
+    dd {
+      > * {
+        width: 100% !important;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+
+        &.pl-20 {
+          padding-left: 15px !important;
+        }
+      }
+    }
+  }
+  .item-counterparty, .item-control, .item-status {
+    text-align: left;
+  }
+  .item-volume {
+
+    .fee {
+      margin-left: 180px;
+    }
+  }
+
+  .otc-payment-settings {
+    .otc-font-medium {
+      .mobile-label {
+        font-family: var(--otc_font_family);
+      }
+    }
+    dd {
+      .text-right {
+        text-align: left;
+      }
+    }
+  }
+  .otc-orders .otc-trade-menu {
+    li {
+      min-width: auto;
+      img {
+        margin-right: 0;
+        + em {
+          display: none;
+        }
+      }
+    }
+  }
+  .otc-list-orders {
+    dd {
+      &:nth-child(2n + 1) {
+        background: transparent;
+      }
+      &:nth-child(2n) {
+        background-color: #fafafa;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mobile-label {
+    width: 130px;
+
+    + span {
+      margin-left: 130px;
+    }
+  }
+  .item-volume {
+
+    .fee {
+      margin-left: 130px;
+    }
+  }
+  .item-action.text-right {
+    text-align: left;
+  }
+}
+.otc-ads {
+  padding-left: 0;
+  padding-right: 0;
+  .body-title {
+    padding-left: calc(2.34vw);
+  }
+  .body-detail {
+    margin-top: calc(3.25vh);
+    .table {
+      table {
+        width: 100%;
+        tr {
+          width: 100%;
+          height: calc(3.9vh);
+          td:first-child, th:first-child {
+            padding-left: calc(2.34vw);
+          }
+        }
+        thead {
+          tr {
+            th {
+              background-color: #F8F9F9;
+            }
+          }
+        }
+        tbody {
+          tr {
+            td:nth-child(2), td:nth-child(5) {
+              text-transform: uppercase;
+              color: #1C76CE;
+            }
+            td:last-child {
+              display: flex;
+              align-items: center;
+              height: calc(3.9vh);
+              img {
+                margin-right: calc(0.97vw);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.otc-my-ads {
+  .v-main__wrap {
+    .v-card {
+      .row {
+        .col-12 {
+          .v-data-table {
+            .v-data-table__wrapper {
+              table {
+                thead {
+                  tr {
+                    th {
+                      background-color: #F8F9F9;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .v-input {
+            .v-input__control {
+              .v-input__slot {
+                height: 30px !important;
+                padding-left: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

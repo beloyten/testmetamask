@@ -1,0 +1,67 @@
+
+// COMPONENTS
+@import "components/_component.less";
+
+// LAYOUTS
+@import "layout/_layout.less";
+
+// Pages
+@import "./layout/pages/cms/_account-details.less";
+@import "./layout/pages/cms/_wallet.less";
+@import "./layout/pages/cms/_invite.less";
+
+// Responsive
+@import "layout/_responsive.less";
+
+// FIX CSS
+@import "custom/_fix_v1.less";
+
+#recaptcha {
+  display: flex;
+  justify-content: center;
+}
+.recaptcha-wrapper {
+  max-width: 400px;
+}
+.menu-item-desktop.menu-item-login {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  flex-direction: row-reverse;
+  max-height: 40px;
+}
+
+.page-error-404 {
+  .error-content {
+    background: white;
+    color: black !important;
+    padding-bottom: 20px !important;
+    h1 {
+      &.small {
+        font-size: 200px;
+      }
+    }
+  }
+}
+
+
+.page-content {
+  max-width: 100%;
+}
+@media (min-width: 992px) {
+  .page-content {
+    max-width: 86%;
+  }  
+}
+.flex-center {
+  display: inline-flex;
+  align-items: center;
+}
+
+.v-application {
+  [class*='text-'] {
+    font-family: var(--font_regular), sans-serif !important;
+  }
+  font-family: var(--font_regular), sans-serif !important;
+}

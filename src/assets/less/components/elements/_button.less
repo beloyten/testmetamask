@@ -1,0 +1,56 @@
+.btn {
+  &:disabled {
+    pointer-events: none;
+  }
+}
+button[disabled] {
+  opacity: 0.8;
+  pointer-events: none;
+}
+.action-swap-btn {
+  a {
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .transition-link-wrapper {
+    .btn-link {
+      padding: 4px;
+    }
+  }
+
+}
+
+.hb_icon_sort_desc, .hb_icon_sort_asc {
+  &.active {
+    &::before {
+      color: var(--link_active);
+    }
+  }
+}
+a.popup-btn {
+  display: inline-block;
+  width: auto;
+  margin-right: 10px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  background-color: var(--menu_hamburger_color_hover);
+  color: var(--white_color);
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 3px 15px;
+  border-radius: 2px;
+  &.disabled {
+    opacity: .6;
+  }
+  &:last-child {
+      margin-right: 0;
+  }
+
+  &.btn-cancel {
+      background-color: transparent;
+      color: inherit;
+  }
+}

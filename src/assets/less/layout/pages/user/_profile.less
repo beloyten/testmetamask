@@ -1,0 +1,197 @@
+.body-content {
+  width: 100%;
+  min-height: calc(77.86vh);
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding-left: calc(2.71vw);
+  padding-right: calc(2.71vw);
+  padding-top: calc(4.43vh);
+  .btn {
+    border: 1px solid #1C76CE;
+    border-radius: 10px;
+    width: 45%;
+    text-transform: uppercase;
+    font-family: 'Quicksand Medium', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    line-height: 19px;
+    margin-right: 5%;
+    &:active {
+      outline: none;
+    }
+  }
+  .btn-cancel {
+    color: #1C76CE !important;
+  }
+  .body-title {
+    font-family: 'Quicksand Medium', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .body-detail {
+    .table {
+      .table-filter {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-right: calc(2.71vw);
+        width: 100%;
+        text-align: right;
+        input {
+          padding: 5px 35px 5px 12px;
+          border-radius: 10px;
+          border: 1px solid var(--input_form_border_color);
+          font-size: 14px;
+        }
+      }
+      table {
+        overflow: hidden;
+        tr {
+          table-layout: fixed;
+          display: table;
+          font-size: 14px;
+          line-height: 17px;
+        }
+        tbody {
+          display: block;
+          width: 100%;
+          height: calc(59vh);
+          overflow-y: scroll;
+        }
+      }
+      .no-data-table {
+        tr {
+          display: table-row;
+          table-layout: auto;
+        }
+      }
+      .no-data-content {
+        width: 100%;
+        height: calc(50vh);
+      }
+    }
+  }
+}
+.profile {
+  background-image: url(/assets/images/background-profile.svg);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: bottom right;
+  .profile-content {
+    margin-top: calc(3.125vh);
+    display: flex;
+    form {
+      input, select, option {
+        width: calc(22.25vw);
+        height: calc(4.95vh);
+        outline: none;
+        border: none;
+        background-color: #F6F8FA;
+        border-radius: 10px;
+        margin-top: calc(1.43vh);
+        margin-bottom: calc(1.43vh);
+        padding: calc(1.43vh) calc(1.9vw);
+        margin-right: 22px;
+      }
+      ::placeholder {
+        font-family: 'Quicksand-Regular', sans-serif;
+        font-size: 14px;
+        line-height: 15px;
+        opacity: 0.5;
+      }
+      .row {
+        display: flex;
+        .complicate {
+          width: calc(22.25vw);
+          margin-right: 22px;
+        }
+        .phone-number {
+          position: relative;
+          margin-left: -15px;
+          input {
+            margin-right: 0;
+            width: 90%;
+          }
+          .verified {
+            position: absolute;
+            top: calc(2.86vh);
+            left: 65%;
+            font-family: 'Quicksand Medium', sans-serif;
+            font-size: 14px;
+            color: #1C76CE;
+          }
+        }
+      }
+    }
+    .profile-image {
+      padding-left: calc(5.83vw);
+      padding-top: calc(12.88vh);
+      img {
+        width: calc(12.54vw);
+        height: calc(26.5vh);
+        object-fit: cover;
+      }
+    }
+  }
+  .form-button {
+    margin-top: calc(3.9vh);
+    display: flex;
+    .btn {
+      width: calc(22.25vw);
+      height: calc(4.8vh);
+      margin-right: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      line-height: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+.profile-page {
+  .v-main__wrap {
+    .page-content {
+      .v-card {
+        background-image: url(/assets/images/background-profile.svg);
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: bottom right;
+        .v-card__text {
+          .row {
+            .col-12 {
+              .row {
+                .col-12 {
+                  .v-input {
+                    border-radius: 10px;
+                    .v-input__control {
+                      .v-input__slot {
+                        .v-text-field__slot {
+                          input {
+                            font-size: 14px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  button {
+                    border-radius: 10px;
+                    letter-spacing: 3px;
+                    &.cancel-button {
+                      border-color: #1C76CE;
+                      color: #1C76CE;
+                    }
+                  }
+                }
+              }
+              img {
+                width: calc(12.53vw);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+.otc-orders {
+  padding-left: 0;
+  padding-right: 0;
+  height: auto;
+  .body-title {
+    padding-left: calc(2.34vw);
+  }
+  .body-detail {
+    margin-top: 50px;
+    .filter-status {
+      display: flex;
+      padding-left: calc(2.34vw);
+      .filter-item {
+        margin-right: 5%;
+        font-family: 'Quicksand Medium', sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        position: relative;
+        text-transform: uppercase;
+        width: calc(9.66vw);
+        text-align: left;
+        opacity: 0.5;
+        transition: all 0.1s ease-in-out;
+        padding-bottom: 10px;
+        &:hover {
+          cursor: pointer;
+        }
+        &.active {
+          opacity: 1;
+          &::after {
+            content: ' ';
+            width: 100%;
+            position: absolute;
+            top: 110%;
+            left: 0;
+            height: calc(0.26vh);
+            background-color: #1C76CE;
+          }
+        }
+      }
+    }
+    .table {
+      table {
+        width: 100%;
+        tr {
+          width: 100%;
+          height: calc(7.68vh);
+          td:first-child, th:first-child {
+            padding-left: calc(2.34vw);
+          }
+        }
+        thead {
+          tr {
+            th {
+              background-color: #F8F9F9;
+            }
+          }
+        }
+        tbody {
+          tr { 
+            td:nth-child(6), td:nth-child(8) {
+              text-transform: uppercase;
+              color: #1C76CE;
+            }
+            td:nth-child(5) {
+              p {
+                margin-bottom: 0;
+              }
+              span {
+                font-size: 10px;
+              }
+            }
+            td:nth-child(2) {
+              text-transform: uppercase;
+            }
+            .buy {
+              color: #1C76CE;
+            }
+            .sell {
+              color: #FA5252;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.otc-my-orders {
+  .v-main__wrap {
+    .v-card {
+      .row {
+        .col-12 {
+          .v-data-table {
+            .v-data-table__wrapper {
+              table {
+                thead {
+                  tr {
+                    th {
+                      background-color: #F8F9F9;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .v-input {
+            .v-input__control {
+              .v-input__slot {
+                height: 30px !important;
+                padding-left: 5px;
+              }
+            }
+          }
+          .v-tabs {
+            .v-tabs-bar {
+              .v-slide-group__wrapper {
+                .v-tabs-bar__content {
+                  .v-tab, .v-tabs-slider-wrapper {
+                    width: 200px !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

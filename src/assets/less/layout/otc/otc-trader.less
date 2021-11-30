@@ -1,0 +1,127 @@
+.otc-trader-head {
+  margin-bottom: 40px;
+  h3 {
+    font-size: 28px;
+    color: var(--otc_title_color);
+    display: inline-block;
+    line-height: 35px;
+  }
+  ul {
+    float: right;
+    li {
+      display: inline-block;
+      float: left;
+    }
+  }
+
+  .otc-btn {
+    line-height: 35px;
+  }
+}
+.hb_icon_edit, .hb_icon_ash_can {
+  position: relative;
+  top: 2px;
+}
+.hb_icon_ash_can {
+  margin-left: 7px;
+}
+em {
+  .hb_icon_edit, .hb_icon_ash_can {
+    top: 0;
+    margin-left: 4px;
+  }
+}
+.item-avatar-wrap {
+  float: left;
+
+  + a {
+    padding-top: 13px;
+    display: block;
+    line-height: 24px;
+  }
+}
+.otc-trader-details {
+  background-color: var(--otc_col_bg);
+  padding: 40px 20px;
+  font-size: 14px;
+  min-height: 260px;
+  *[class*="w-"] {
+    float: left;
+  }
+  .item-avatar {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    margin-right: 0;
+    margin-bottom: 10px;
+
+    + span {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 14px;
+      font-family: var(--otc_title_font_family);
+      color: var(--link_active);
+    }
+  }
+
+  h5 {
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-family: var(--otc_title_font_family);
+  }
+}
+.otc-trader-right {
+  dd {
+    padding: 20px 10px;
+
+    &:nth-child(2) {
+      border-left: 1px solid var(--otc_border_color);
+      border-right: 1px solid var(--otc_border_color);
+    }
+  }
+  dl {
+    border-bottom: 1px solid var(--otc_border_color);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  h5.total-orders {
+    font-family: var(--otc_font_family);
+
+    > span:first-child {
+      font-family: var(--otc_title_font_family);
+    }
+  }
+}
+.otc-trader-body {
+  .otc-list-orders {
+    margin-top: 50px;
+  }
+  h2 {
+    font-size: 18px;
+    font-family: var(--otc_title_medium_font_family);
+  }
+
+  .otc-list-orders {
+    padding-left: 0;
+    padding-right: 0;
+    dd {
+      background-color: var(--otc_col_bg);
+      border-bottom: 1px solid var(--otc_border_color);
+      > * {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+    dt, dd {
+      .item-token {
+        padding-left: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,229 @@
+.no-data {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.otc-setting {
+  background-size: 60%;
+  padding-left: 0;
+  padding-right: 0;
+  .body-title {
+    padding-left: calc(2.34vw);
+    display: flex;
+    justify-content: space-between;
+    height: calc(4.95vh);
+    .btn {
+      width: calc(11.5vw);
+      height: calc(4.95vh);
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      line-height: 15px;
+    }
+  }
+  .body-detail {
+    margin-top: calc(2.6vh);
+    .body-link {
+      display: flex;
+      padding-left: calc(2.34vw);
+      .link-item {
+        margin-right: calc(6.95vw);
+        font-family: 'Quicksand Medium', sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        position: relative;
+        opacity: 0.5;
+        padding-bottom: 10px;
+        &.active {
+          opacity: 1;
+          &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: #1C76CE;
+            top: 100%;
+            left: 0;
+          }
+        }
+        &:hover {
+          opacity: 1;
+          cursor: pointer;
+        }
+      }
+    }
+    .body-item {
+      margin-top: calc(8.33vh);
+    }
+    .change-fund-password {
+      display: flex;
+      padding-left: calc(2.34vw);
+      form {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        input {
+          height: calc(4.95vh);
+          border: none;
+          outline: none;
+          border-radius: 10px;
+          background-color: #F6F8FA;
+          margin-bottom: calc(1.3vh);
+          margin-top: calc(1.3vh);
+          padding-left: 35px;
+          width: calc(24.74vw);
+        }
+        .form-button {
+          display: flex;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          .btn {
+            border: 1px solid #1C76CE;
+            border-radius: 10px;
+            width: 47%;
+            margin-right: 0;
+          }
+          .btn-confirm {
+            background-color: #1C76CE;
+            margin-left: 6%;
+          }
+        }
+      }
+      .change-fund-password-image {
+        padding-left: calc(13.8vw);
+        padding-top: calc(15.3vh);
+        img {
+          width: calc(14.2vw);
+          height: calc(32.6vh);
+          object-fit: contain;
+        }
+      }
+    }
+    .payment-setting {
+      width: 100%;
+      margin-top: 0;
+      .table {
+        width: 100%;
+        table {
+          width: 100%;
+          tr {
+            height: calc(7.55vh);
+          }
+          thead {
+            tr {
+              width: 100%;
+              th {
+                background-color: #F8F9F9;
+                &:first-child {
+                  padding-left: 50px;
+                  width: 10%;
+                }
+                &:nth-child(2) {
+                  width: 15%;
+                }
+                &:nth-child(3) {
+                  width: 20%;
+                }
+                &:nth-child(4) {
+                  width: 20%;
+                }
+                &:nth-child(5) {
+                  width: 20%;
+                }
+                &:nth-child(6) {
+                  width: 15%;
+                }
+              }
+            }
+          }
+          tbody {
+            tr {
+              width: 100%;
+              td { 
+                &:first-child {
+                  padding-left: 50px;
+                  width: 10%;
+                }
+                &:nth-child(2) {
+                  width: 15%;
+                }
+                &:nth-child(3) {
+                  width: 20%;
+                }
+                &:nth-child(4) {
+                  width: 20%;
+                }
+                &:nth-child(5) {
+                  width: 20%;
+                }
+                &:nth-child(6) {
+                  width: 15%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.otc-setting-page {
+  .v-main__wrap {
+    .page-content {
+      .v-card {
+        .body-item {
+          .v-window {
+            .v-window__container {
+              .v-window-item {
+                .v-card {
+                  .row {
+                    .col-12 {
+                      form {
+                        .v-input {
+                          border-radius: 10px;
+                          .v-input__control {
+                            .v-input__slot {
+                              .v-text-field__slot {
+                                input {
+                                  font-size: 14px;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      .row {
+                        .col-12 {
+                          button {
+                            border-radius: 10px;
+                            letter-spacing: 3px;
+                          }
+                        }
+                      }
+                      img {
+                        width: calc(13.9vw);
+                      }
+                    }
+                  }
+                  &.change-fund-password {
+                    background-image: url(/assets/images/background-profile.svg);
+                    background-repeat: no-repeat;
+                    background-size: 60%;
+                    background-position: bottom right;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
